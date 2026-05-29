@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: quantra-backend
+Version: 0.1.0
+Summary: Quantra — AI-powered Stock Market Analyzer backend
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: fastapi<1.0,>=0.111.0
+Requires-Dist: uvicorn[standard]<1.0,>=0.30.0
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: sse-starlette<3.0,>=2.1.0
+Requires-Dist: sqlalchemy[asyncio]<3.0,>=1.4.36
+Requires-Dist: asyncpg<1.0,>=0.29.0
+Requires-Dist: alembic<2.0,>=1.13.1
+Requires-Dist: psycopg2-binary<3.0,>=2.9.9
+Requires-Dist: redis[hiredis]<6.0,>=5.0.0
+Requires-Dist: celery[redis]<6.0,>=5.4.0
+Requires-Dist: aiokafka<1.0,>=0.10.0
+Requires-Dist: python-jose[cryptography]<4.0,>=3.3.0
+Requires-Dist: passlib[bcrypt]<2.0,>=1.7.4
+Requires-Dist: bcrypt<5.0,>=4.1.0
+Requires-Dist: scikit-learn<2.0,>=1.5.0
+Requires-Dist: xgboost<3.0,>=2.0.0
+Requires-Dist: transformers>=4.41.0
+Requires-Dist: torch<3.0,>=2.3.0
+Requires-Dist: pandas<3.0,>=2.2.0
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: yfinance<1.0,>=0.2.38
+Requires-Dist: alpha-vantage<4.0,>=3.0.0
+Requires-Dist: newspaper3k<1.0,>=0.2.8
+Requires-Dist: feedparser<7.0,>=6.0.11
+Requires-Dist: httpx<1.0,>=0.27.0
+Requires-Dist: beautifulsoup4<5.0,>=4.12.0
+Requires-Dist: lxml>=5.2.0
+Requires-Dist: minio<8.0,>=7.2.5
+Requires-Dist: pydantic<3.0,>=2.7.0
+Requires-Dist: pydantic-settings<3.0,>=2.3.0
+Requires-Dist: python-dotenv<2.0,>=1.0.1
+Requires-Dist: pytz>=2024.1
+Requires-Dist: orjson<4.0,>=3.10.0
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.2.0; extra == "dev"
+Requires-Dist: pytest-asyncio<1.0,>=0.23.0; extra == "dev"
+Requires-Dist: pytest-cov<6.0,>=5.0.0; extra == "dev"
+Requires-Dist: httpx<1.0,>=0.27.0; extra == "dev"
+Requires-Dist: ruff<1.0,>=0.4.0; extra == "dev"
+Requires-Dist: mypy<2.0,>=1.10.0; extra == "dev"
+Requires-Dist: fakeredis<3.0,>=2.23.0; extra == "dev"
+Provides-Extra: airflow
+Requires-Dist: apache-airflow<3.0,>=2.9.0; extra == "airflow"

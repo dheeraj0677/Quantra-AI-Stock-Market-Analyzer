@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Databases & local docker volumes
+pgdata/
+redisdata/
+zkdata/
+kafkadata/
+miniodata/
+
+# IDE & system generated files
+.vscode/
+.idea/
+.gemini/
+.system_generated/
+tasks/
+walkthrough.md
+
+# OS files
+.DS_Store
+Thumbs.db

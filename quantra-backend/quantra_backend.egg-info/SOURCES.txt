@@ -1,0 +1,9 @@
+pyproject.toml
+app/config.py
+app/dependencies.py
+app/main.py
+quantra_backend.egg-info/PKG-INFO
+quantra_backend.egg-info/SOURCES.txt
+quantra_backend.egg-info/dependency_links.txt
+quantra_backend.egg-info/requires.txt
+quantra_backend.egg-info/top_level.txt

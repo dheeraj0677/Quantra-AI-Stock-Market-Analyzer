@@ -1,0 +1,16 @@
+# ── Quantra Airflow ──
+FROM apache/airflow:2.9.1-python3.11
+
+USER root
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends gcc libpq-dev && \
+    rm -rf /var/lib/apt/lists/*
+USER airflow
+
+COPY pyproject.toml /opt/airflow/
+COPY app/ /opt/airflow/app/
+RUN pip install --no-cache-dir /opt/airflow/[airflow]
+
+COPY airflow/dags/ /opt/airflow/dags/
+
+ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
